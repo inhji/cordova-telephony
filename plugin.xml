@@ -6,11 +6,11 @@
 
     <name>Telephony</name>
 
-    <description>A bunch of email composition plugins for Cordova 3.x.x</description>
-    <keywords>email, email intent, email composer, ios, android</keywords>
+    <description>Plugin Acessing the TelephonyService for Cordova 3.x.x</description>
+    <keywords>telephony, signal, signal strength, carrier, android</keywords>
     <license>GPL v2 License</license>
 
-    <author>Sebastián Katzer (github.com/katzer)</author>
+    <author>Inhji (github.com/inhji)</author>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="de.inhji.cordova.plugin.telephony"
+        version="0.4.0">
+
+    <name>Telephony</name>
+
+    <description>A bunch of email composition plugins for Cordova 3.x.x</description>
+    <keywords>email, email intent, email composer, ios, android</keywords>
+    <license>GPL v2 License</license>
+
+    <author>Sebastián Katzer (github.com/katzer)</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- interface -->
+    <js-module src="www/telephony.js" name="Telephony">
+        <clobbers target="plugin.email" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Telephony">
+                <param name="android-package" value="de.inhji.cordova.plugin.Telephony"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Telephony.java" target-dir="src/de/inhji/cordova/plugin" />
+
+    </platform>
+
+</plugin>
